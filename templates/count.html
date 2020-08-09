@@ -1,0 +1,12 @@
+<h2>There are {{word_count}} words in your text</h2>
+<a href="{%url 'home'%}">Start again</a>
+<h2>Your Text:</h2>
+{{txt}}
+
+<h2>Word Usage</h2>
+
+{% for a,b in words%}
+{{ a }}:{{b}}
+<br />
+
+{% endfor %}
